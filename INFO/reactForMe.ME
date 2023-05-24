@@ -1,0 +1,70 @@
+React is a js component based library for develop single page app with reusable component.
+
+The best ‘framework’ because:
+- JSX
+- Compnents
+- One way data-binding
+- Virtual DOM
+
+A good learning curve, with huge documentation and tutorial.
+
+With JSX, Javascript extension,  you can write less code for develop dynamic pages.
+
+You can use good Chrome extension helping u develop.
+
+It has a huge library (from React and others)
+
+Limitations:
+
+- just a library
+- many React libraries to understand
+
+JSX is Javascript XML provide u write js and html together, then transilar translate in js.
+JSX is faster because it translate in native js, faster then separate technologies and many errors can be found in the compilation time.
+It easy build template.
+
+ES5 vs ES6 in React
+Import - Export - Component - Function - Props - State 
+(See code in folder)
+
+Difference from ReactJS vs ReactNative.
+Native is for mobile, 
+it use built-in animation libraries instead of css an js, 
+it has navigator library instead of React-router, 
+it doesn't use HTML tags,
+it doesn't use VirtualDOM to render but its API.
+
+Virtual DOM it faster and no waste memory.
+
+Props stand for "Properties" and they are read-only inputs to components.
+
+State is an updatable structure which holds the data and information about the component.
+
+The major differences between States and Props are that pros can flow down and are immutable, state are component data only and can be changed.
+
+Stateless component simply take props (or not) and return something.
+
+The React event handling system is known as Synthetic Event, which is a cross-browser wrapper of the browser's native event.
+Handling events with React have some syntactical differences, which are 'camelCase' instead of lowercase and with JSX u have to pass as the event handler instead of a string.
+
+Why unique key in React?
+A key is a unique identifier. 
+It permits changed, updated, or deleted instead of re-rendering the entire set of components.
+
+lifeCycle:
+        - 1 componentDidMount-> appena dopo il render
+        - 2 componentDidUpdate(prevProps, prevState)-> quando cambia lo stato interno
+        - 3 componentWillUnmount-> un attimo prima l'unmount
+
+    I metodi sopra li si usa con i componenti a classe
+    Con i functional component usi gli hook:
+
+        - 1 usestate(() => { dosomething() }, [])
+        - 1 usestate(() => { dosomething() })
+        - 1 usestate(() => {return()=>{ dosomething() }}, [])
+
+fetch:
+    Il fetch nel didUpdate e il json in uno stato inizializzato vuoto e aggiornato con lo spread operator
+
+Stateless and stateFull:
+    priam della 16.8 solo i componenti a classe potevano averli, dopo anche i func comp usando gli hook.

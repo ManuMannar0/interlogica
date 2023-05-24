@@ -1,0 +1,12 @@
+lifeCycle:
+        - 1 componentDidMount-> appena dopo il render
+        - 2 componentDidUpdate(prevProps, prevState)-> quando cambia lo stato interno
+        - 3 componentWillUnmount-> un attimo prima l'unmount
+
+    I metodi sopra li si usa con i componenti a classe
+    Con i functional component usi gli hook:
+
+        - 1 usestate(() => { dosomething() }, [])
+        - 1 usestate(() => { dosomething() })
+        - 1 usestate(() => {return()=>{ dosomething() }}, [])
+

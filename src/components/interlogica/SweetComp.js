@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { useDispatch } from 'react-redux';
-import { SET_INGREDIENTS, SET_INGREDIENTS_BOX_VISIBLE, SET_TITLE } from './store/ingredientsDetails/actions';
+import { SET_INGREDIENTS, SET_INGREDIENTS_BOX_VISIBLE, SET_TITLE } from '../../store/ingredientsDetails/actions';
 import useWindowSize from "react-hook-usewindowsize";
 
 export const StyledContainer = styled.div`
